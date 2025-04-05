@@ -8,9 +8,9 @@ export const Test = (): React.JSX.Element => {
 	const {data, error, refetch} = useQuery(trpc.getUsers.queryOptions());
 	const {mutate} = useMutation(
 		trpc.addUser.mutationOptions({
-			onSuccess: () => {
+			onSuccess: async () => {
 				// Refetch the query after successful mutation
-				refetch();
+				await refetch();
 			},
 		}),
 	);
@@ -29,7 +29,7 @@ export const Test = (): React.JSX.Element => {
 	return (
 		<div>
 			<h2>Users:</h2>
-			<ul>{data?.map((e, i) => <li key={e}>{e}</li>)}</ul>
+			<ul>{data?.map((e) => <li key={e}>{e}</li>)}</ul>
 			<div>
 				User name:
 				<input type="text" value={user} onChange={(e) => setUser(e.target.value)} />

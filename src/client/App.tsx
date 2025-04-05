@@ -33,7 +33,6 @@ function getQueryClient() {
 
 export const App = (): React.JSX.Element => {
 	const queryClient = getQueryClient();
-	// eslint-disable-next-line react/hook-use-state
 	const [trpcClient] = useState(() => client);
 
 	return (
