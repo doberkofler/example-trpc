@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		"target": "es2020",
+		"module": "es2020",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
+		"checkJs": true,
+		"importHelpers": true,
+		"jsx": "react",
+		"alwaysStrict": true,
+		"sourceMap": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
+		"allowImportingTsExtensions": true
+	},
+	"include": ["src"]
+}

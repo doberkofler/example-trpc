@@ -1,0 +1,31 @@
+{
+	"name": "test",
+	"type": "module",
+	"scripts": {
+		"build": "esbuild src/client/index.tsx --bundle --format=esm --outfile=build/index.js --sourcemap --target=es2020",
+		"lint": "prettier --check . && eslint . && tsc --noEmit",
+		"start": "node --experimental-transform-types src/server/index.ts"
+	},
+	"dependencies": {
+		"@tanstack/react-query": "5.71.10",
+		"@trpc/client": "11.0.2",
+		"@trpc/server": "11.0.2",
+		"@trpc/tanstack-react-query": "11.0.2",
+		"@types/debug": "4.1.12",
+		"@types/express": "5.0.1",
+		"@types/node": "22.14.0",
+		"@types/react": "19.1.0",
+		"@types/react-dom": "19.1.1",
+		"debug": "4.4.0",
+		"esbuild": "0.25.2",
+		"eslint": "9.23.0",
+		"express": "5.1.0",
+		"prettier": "3.5.3",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"superjson": "2.2.2",
+		"typescript": "5.8.3",
+		"typescript-eslint": "8.29.0",
+		"zod": "3.24.2"
+	}
+}
