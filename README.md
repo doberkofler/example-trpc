@@ -1,8 +1,10 @@
 # An example on how to use tRPC together with TanStack React Query
 
 # Install
-npm i
-npm run build
+
+- npm i
+- npm run build
 
 # Run
-npm run start
+
+- npm run start
