@@ -1,7 +1,7 @@
 {
 	"name": "example-trpc",
 	"type": "module",
-	"description": "A complete example application on how to use tRPC together with TanStack React Query",
+	"description": "An example on how to use tRPC together with TanStack React Query",
 	"license": "MIT",
 	"scripts": {
 		"build": "esbuild src/client/index.tsx --bundle --format=esm --outfile=build/index.js --sourcemap --target=es2020 && cp src/public/* build",
