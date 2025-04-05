@@ -39,9 +39,7 @@ export const App = (): React.JSX.Element => {
 		<React.StrictMode>
 			<QueryClientProvider client={queryClient}>
 				<TRPCProvider trpcClient={trpcClient} queryClient={queryClient}>
-					<div className="app-container">
-						<Test />
-					</div>
+					<Test />
 				</TRPCProvider>
 			</QueryClientProvider>
 		</React.StrictMode>

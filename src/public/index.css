@@ -4,33 +4,71 @@
 	box-sizing: border-box;
 }
 
-body {
+html,
+body,
+input,
+select,
+textarea,
+button {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
 	background-color: #f5f5f5;
 	color: #333;
-	line-height: 1.6;
-	padding: 2rem;
 }
 
-.app-container {
-	max-width: 800px;
-	margin: 0 auto;
-	background: white;
-	padding: 2rem;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+input,
+select,
+textarea,
+button {
+	min-height: 35px;
+	padding: 5px;
 }
 
 button {
 	background-color: #007bff;
 	color: white;
 	border: none;
-	padding: 0.6rem 1.2rem;
-	border-radius: 4px;
+	border-radius: 2px;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
 }
 
+pre {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 8px;
+}
+
 button:hover {
 	background-color: #0056b3;
+}
+
+.paper {
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 20px;
+	width: 600px;
+}
+
+.block {
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin: 10px;
+}
+
+.error-line {
+	display: flex;
+	margin-bottom: 4px;
+}
+
+.error-name {
+	width: 100px;
+}
+
+.error-value {
+	flex: 1;
+	word-break: break-word;
 }

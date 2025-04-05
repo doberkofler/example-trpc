@@ -4,7 +4,7 @@ import globals from 'globals';
 
 const flat_config = tseslint.config(
 	{
-		ignores: ['**/.*', 'examples/**', 'types/**', 'node_modules/**'],
+		ignores: ['build', 'node_modules/**'],
 	},
 	{
 		linterOptions: {
